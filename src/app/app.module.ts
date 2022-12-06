@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddcourseComponent } from './addcourse/addcourse.component';
-
+import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -25,7 +25,7 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddcourseComponent,
-   
+    ViewcourseComponent,
     NavbarComponent,
     Viewcourse2Component
   ],
