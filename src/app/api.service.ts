@@ -7,12 +7,13 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
+  addcourse=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/add",datatosend)
+}
   fetchcourses=()=>
   {
-    return this.http.get("https://localhost:8080/view")
+    return this.http.get("http://localhost:8080/view")
 }
-addcourse=(datatosend:any)=>
-{
-  return this.http.post("https://localhost:8080/add",datatosend)
-}
+
 }

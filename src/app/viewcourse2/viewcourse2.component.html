@@ -6,7 +6,7 @@
                 <thead>
                   <tr>
                     
-                    <th scope="col">Id</th>
+                   <!-- <th scope="col">Id</th>-->
                     <th scope="col">Course Title</th>
                     <th scope="col">Course Description</th>
                     <th scope="col">Course Date</th>
@@ -17,12 +17,12 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of data">
-                    <th scope="row">{{i._id}}</th>
-                    <td>{{i.courseTitle}}</td>
-                    <td>{{i.courseDescription}}</td>
-                    <td>{{i.courseDate}}</td>
-                    <td>{{i.courseDuration}}</td>
-                    <td>{{i.courseVenue}}</td>
+                    <!--<th scope="row">{{i._id}}</th>-->
+                    <td>{{i.coursetitle}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.duration}}</td>
+                    <td>{{i.venu}}</td>
                     
                   </tr>
                 </tbody>
