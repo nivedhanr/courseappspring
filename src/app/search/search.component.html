@@ -44,60 +44,63 @@
 
 
             </div>
+
+
+
         </div>
-
-        <div class="row mt-5" *ngFor="let j of readValues">
-
-
+        <div class="row" ></div>
 
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                <label for="" class="form-label">Course Description</label>
+                <table class="table">
 
-                <textarea  id=""  rows="5" class="form-control" value="{{j.description}}"></textarea>
+                    <thead>
 
-            </div>
+                      <tr>
 
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <th scope="col">Course Description</th>
 
-                <label for="" class="form-label">Course Date</label>
+                        <th scope="col">Course Date</th>
 
-                        <input  type="date" class="form-control" value="{{j.date}}">
+                        <th scope="col">Duration</th>
 
-            </div>
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <th scope="col">Venue</th>
 
-                <label for="" class="form-label">Duration</label>
+                      </tr>
 
-                        <input  type="text" class="form-control" value="{{j.duration}}">
+                    </thead>
 
-            </div>
+                    <tbody>
 
-            
+                      <tr *ngFor="let i of readValues">
 
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <td>{{i.description}}</td>
 
-                <label for="" class="form-label">Venue</label>
+                        <td>{{i.date}}</td>
 
-                        <input type="text" class="form-control" value="{{j.venu}}">
+                        <td>{{i.duration}}</td>
 
-            </div>
+                        <td>{{i.venu}}</td>
 
-           
+                      </tr>
 
-           
+                     
 
+                    </tbody>
 
-
-
-    </div>
+                  </table>
 
 
 
-    </div>
+
+        </div>
+
+
+
+        </div>
 
 
 
 </div>
 
-</div>
+    </div>
